@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>User Registration Form</title>
+<style>
+body {
+background-image: url("Desert.jpg");
+}
+input{
+width: 80%;
+padding: 10px;
+margin: 5px 20px;
+border-radius: 10px;
+}
+h3{ 
+color: white;
+margin: 15px;
+font-size: 34px;
+}
+input:focus
+{
+background-color: orange;
+color: seashell;
+outline: none;
+}
+.submit{
+background-color: slateblue;
+width: 80%;
+color: snow;
+font-size: 24px;
+background-color: green	;
+}
+.form-container, .instruction{
+float: left;
+width: 50%;
+}
+@media screen and (max-width: 800px)
+{
+.form-container, .instruction {
+width: 100%;
+}
+}
+p{
+color: white;
+margin: 15px;
+}
+</style>
+</head>
+<body>
+<div style="padding: 5px; border-radius: 10px; height: 60%; width:70%; margin: 40px auto">
+<div class="instruction"><br><br><br><br>
+<h3>Vancover's Best<br> Home Cleaners</h3>
+<p><b> Pro cleaning is Vancover's best cleaning service. for the quality maid service Vancover relies on, book one of our experienced, background-checked professionals to have your home clean in no time.<b></p>
+</div>
+<div class="form-container" style="background-color: black">
+<h3>Request Info & Booking</h3><p>Fill this form and we'll contact you as soon ass we can</p>
+<form action="" onsubmit="processForm()" name="SignupForm" id="SignupForm">
+<input type="text" name="fullname" id="fullName" placeholder="Your Name" required>
+<input type="email" name="email" id="email" placeholder="Your Email" required>
+<input type="number" name="phone" id="phone" maxlength="11" placeholder="Enter Phone" required>
+<input type="submit" name="signup" value="Request Info & Booking" class="submit" >
+</form>
+</div>
+<div style="clear:left;"></div>
+</div>
+<script>
+function processForm() 
+{
+alert('Good Luck!')
+}
+</script>
+</body>
+</html>
